@@ -35,10 +35,24 @@ body {
 /* All of the cards emojis */
 .emojis {
   display: grid;
-  grid-template-rows: 400px 400px;
+  grid-template-rows: 320px 320px;
   grid-template-columns: 50% 50%;
   gap: 20px;
 }
 /* sizes of the cards */
 .emoji {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+/* flex the icon heading, paragraph and button */
+.icon {
+  order: -1;
+  align-self: center;
+}
+p {
+  align-self: stretch;
+}
+a {
+  margin-top: 5%;
 }
